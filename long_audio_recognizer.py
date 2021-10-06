@@ -7,6 +7,7 @@ from pydub.silence import split_on_silence
 # create a speech recognition object
 r = sr.Recognizer()
 
+
 # a function that splits the audio file into chunks
 # and applies speech recognition
 def get_large_audio_transcription(path):
@@ -54,7 +55,7 @@ def get_large_audio_transcription(path):
 
 if __name__ == '__main__':
     import sys
-    # path = "30-4447-0004.wav"
-    # path = "7601-291468-0006.wav"
+    path="C:/Users/Giorgos/OneDrive/Desktop/Speech-to-text/7601-291468-0006.wav"
+    path="C:/Users/Giorgos/OneDrive/Desktop/Speech-to-text/30-4447-0004.wav"
     path = sys.argv[1]
     print("\nFull text:", get_large_audio_transcription(path))
